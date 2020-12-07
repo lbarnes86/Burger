@@ -29,3 +29,6 @@ connection.connect(function (err) {
         database: "burgers_db",
       });
     }
+
+    //Export connection for the ORM to use
+module.exports = connection;
