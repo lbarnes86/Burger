@@ -26,4 +26,24 @@ let orm = {
     });
   },
 
+  // objColVals would be the columns and values that you want to update
+  // an example of objColVals would be {name: panther, sleepy: true}
+  updateOne: function(colVal, id, cb) {
+    var queryString = `UPDATE burgers SET devoured='1' WHERE ${colVal}=${id};`;
+    connection.query(queryString, [id], function(err, result) {
+      if (err) {
+        throw err;
+      }
+      cb(result);
+    });
+},
+delete: function( tableName, id, cb) {
+        var queryString = `DELETE FROM ${tableName} WHERE id=${id};`;
+        connection.query(queryString, function(err, result) {
+          if (err) {
+            throw err;
+          }
+          cb(result);
+        });
 }
+  }
