@@ -15,6 +15,15 @@ let orm = {
 },
 // vals is an array of values that we want to save to cols
   // cols are the columns we want to insert the values into
-  
+  insertOne: function(tableName, cols, vals, cb) {
+    var queryString = `INSERT INTO ${tableName} (${cols}) VALUES ('${vals}');`;
+     //`INSERT INTO burgers (burger_name devoured) VALUES ('blue cheese',false)`
+    connection.query(queryString, function(err, result) {
+      if (err) {
+        throw err;
+      }
+      cb(result);
+    });
+  },
 
 }
