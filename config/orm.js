@@ -3,4 +3,6 @@
 
 let connection = require("./connection.js");
 
-let 
+let orm = {
+    
+}
