@@ -4,8 +4,6 @@
 
 </div>
 
-This is a
-
 - Project Repository: [Repository](https://github.com/lbarnes86/Burger)
 
 - Working app: [Application]()
@@ -21,12 +19,12 @@ This is a
 
 ## Description
 
->This 
+>This Burger app allows you to create and add a burger, devour, and delete from the list.
 
 ## Usage
 
 ```
-In this application, the user can add, view, and delete 
+In this application, the user can add, view, and delete a burger from the working app
 
 ```
 
@@ -38,6 +36,10 @@ In this application, the user can add, view, and delete
 - [console.table](https://www.npmjs.com/package/console.table)
 
 ## Screenshots
+
+<img src="https://user-images.githubusercontent.com/70309736/101441173-22a3fe00-38de-11eb-9337-32f088248f93.png">
+
+<img src="https://user-images.githubusercontent.com/70309736/101441675-46b40f00-38df-11eb-83e1-16e3366e14a8.png">
 
 
 ## Contributors
