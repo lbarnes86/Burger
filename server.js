@@ -1,24 +1,24 @@
+
+// Import routes and give the server access to them.
+let routes = require("./controller/burgers_controller");
+// Set Handlebars.
+let exhbs = require("express-handlebars");
 let express = require("express");
-let connection = require("./config/connection");
+// let connection = require("./config/connection");
 let bodyParser = require("body-parser");
-let PORT = process.env.PORT || 8090;
+let PORT = process.env.PORT || 8080;
 
 let app = express();
 
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}));
+app.use(bodyParser.urlencoded({extended: true}));
 
 // Serve static content for the app from the "public" directory in the application directory.
 app.use(express.static("./public"));
 
-// Set Handlebars.
-let exhbs = require("express-handlebars");
-
 app.engine("handlebars", exhbs({ defaultLayout: "main" }));
 app.set("view engine", "handlebars");
 
-// Import routes and give the server access to them.
-let routes = require("./controllers/burgerController.js");
 
 app.use(routes);
 
