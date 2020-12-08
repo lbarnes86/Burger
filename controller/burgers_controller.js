@@ -3,7 +3,7 @@ var express = require("express");
 var router = express.Router();
 
 // Import the model (burger.js) to use its database functions.
-var burger = require("../model/burger.js");
+var burger = require("../models/burger.js");
 
 // Create all our routes and set up logic within those routes where required.
 router.get("/", function(req, res) {
@@ -41,7 +41,7 @@ router.post("/updateOne/:id", function(req, res) {
   );
 
   router.get("/deleteOne/:id", function(req, res) {
-    console.log('we hit hte delete route!!', req.params);
+    console.log('we hit the delete route!!', req.params);
 
     var condition = "id = " + req.params.id;
     var colVal = "id";
