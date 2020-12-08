@@ -33,7 +33,7 @@ In this application, the user can add, view, and delete a burger from the workin
 - [MySQL](https://www.npmjs.com/package/mysql)
 - [JavaScript](https://www.javascript.com/) 
 - [node](https://nodejs.org/en/)
-- [console.table](https://www.npmjs.com/package/console.table)
+
 
 ## Screenshots
 
