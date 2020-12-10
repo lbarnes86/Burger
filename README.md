@@ -6,7 +6,7 @@
 
 - Project Repository: [Repository](https://github.com/lbarnes86/Burger)
 
-- Working app: [Application](https://burger-lfb.herokuapp.com/)
+- Working app: [Application](https://burger-lb.herokuapp.com/)
 
 ## Table of Contents
 
